@@ -56,6 +56,8 @@ This search finds data given by generating a boolean query across facets. Curren
 
 These queries are generated in sparc-api [here](https://github.com/nih-sparc/sparc-api/blob/eb53aaa7b9904c0fabfe522db7cd8b8c97ff7608/app/process_kb_results.py#L92)
 
+(In use as of 2021/06/11)
+
 #### POST
 
 ```text
@@ -100,3 +102,70 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
 //...
 ```
 
+## Available Facets Query 
+
+This query requests available facets for a given parameter in the 'hits' object. 
+
+Implementation of this can be seen in sparc-api [here](https://github.com/nih-sparc/sparc-api/blob/eb53aaa7b9904c0fabfe522db7cd8b8c97ff7608/app/process_kb_results.py#L59)
+
+(In use as of 2021/06/11)
+
+#### POST
+
+```text
+https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
+```
+
+#### JSON Body example
+
+```yaml
+{
+  "from": 0,
+  "size": 0,
+  "aggregations": {
+    "genotype": {
+      "terms": {
+        "field": "anatomy.organ.name.aggregate",
+        "size": 200,
+        "order": [
+          {
+            "_count": "desc"
+          },
+          {
+            "_key": "asc"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+#### Result
+
+```yaml
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 88,
+        "max_score": 0.0,
+        "hits": []
+    },
+    "aggregations": {
+        "genotype": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                    "key": "heart",
+                    "doc_count": 21
+                },
+//...
+```
