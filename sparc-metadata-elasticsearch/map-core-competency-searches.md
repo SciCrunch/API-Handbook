@@ -50,3 +50,53 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
         "hits": [ ...
 ```
 
+## Boolean Filter Search
+
+This search finds data given by generating a boolean query across facets. Currently this is also combined with an optional text based search, although this may be removed in future.
+
+These queries are generated in sparc-api [here](https://github.com/nih-sparc/sparc-api/blob/eb53aaa7b9904c0fabfe522db7cd8b8c97ff7608/app/process_kb_results.py#L92)
+
+#### POST
+
+```text
+https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
+```
+
+#### JSON Body example
+
+```yaml
+{
+  "size": 10,
+  "from": 0,
+  "query": {
+    "query_string": {
+      "query": "(Ardell) AND attributes.subject.sex.value:((male) OR (female))  AND anatomy.organ.name.aggregate:((heart))"
+    }
+  }
+}
+```
+
+#### Result
+
+```yaml
+{
+    "took": 2070,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 5,
+        "max_score": 5.709837,
+        "hits": [
+            {
+                "_index": "scr_017041-sparc_datasets-ks_2021apr28",
+                "_type": "ks",
+                "_id": "DOI:10.26275/w4my-puqm",
+                "_score": 5.709837,
+//...
+```
+
