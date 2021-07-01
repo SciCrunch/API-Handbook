@@ -111,3 +111,87 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
                     "doc_count": 1
                 }, ...
 ````
+
+## Search for dataset by title
+
+This search looks for a dataset by title.
+
+#### POST
+
+```text
+https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=####
+```
+
+#### JSON Body
+
+````text
+{
+    "size": 20,
+    "from": 0,
+    "query": {
+        "query_string": {
+            "fields": [
+                "item.names.name"
+            ],
+            "query": "(Generic) AND (rat) AND (stomach) AND (scaffold)"
+        }
+    }
+}```
+
+#### Result
+
+```text
+{
+    "took": 22,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 1,
+        "max_score": 7.7667675,
+        "hits": [
+            {
+                "_index": "scr_017041-sparc_portal-ks-2021jun22",
+                "_type": "ks",
+                "_id": "DOI:10.26275/dn1d-owj9",
+                "_score": 7.7667675,
+                "_source": {
+                    "item": {
+                        "version": {
+                            "keyword": "1.1.2"
+                        },
+                        "types": [
+                            {
+                                "curie": "ilx:0102834",
+                                "name": "Dataset",
+                                "type": "category"
+                            }
+                        ],
+                        "contentTypes": [
+                            {
+                                "curie": "ilx:0381348",
+                                "name": "product"
+                            }
+                        ],
+                        "names": [
+                            {
+                                "nameType": "Complete Data Set",
+                                "name": "Generic rat stomach scaffold"
+                            }
+                        ],
+                        "statistics": {
+                            "files": {
+                                "count": "24"
+                            },
+                            "directory": {
+                                "count": "4"
+                            },
+                            "bytes": {
+                                "count": "5582424"
+                            }
+                        }, ...
+````
