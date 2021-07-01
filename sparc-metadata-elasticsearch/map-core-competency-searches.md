@@ -62,7 +62,7 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
 
 #### JSON Body
 
-````text
+```text
 {
     "from": 0,
     "size": 0,
@@ -79,7 +79,8 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
             }
         }
     }
-}```
+}
+```
 
 #### Result
 
@@ -110,7 +111,7 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
                     },
                     "doc_count": 1
                 }, ...
-````
+```
 
 ## Search for dataset by title
 
@@ -124,7 +125,7 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
 
 #### JSON Body
 
-````text
+```text
 {
     "size": 20,
     "from": 0,
@@ -136,7 +137,8 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
             "query": "(Generic) AND (rat) AND (stomach) AND (scaffold)"
         }
     }
-}```
+}
+```
 
 #### Result
 
@@ -194,4 +196,4 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
                                 "count": "5582424"
                             }
                         }, ...
-````
+```
