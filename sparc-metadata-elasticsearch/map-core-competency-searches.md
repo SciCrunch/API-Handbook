@@ -20,8 +20,8 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
 
 ```text
 {
-    "size": 10, 
-    "from": 0, 
+    "size": 10,
+    "from": 0,
     "query": {
             "bool": {
                 "must": [
@@ -50,3 +50,64 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
         "hits": [ ...
 ```
 
+## Search for all DOI
+
+This search looks for all DOIs.
+
+#### POST
+
+```text
+https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=####
+```
+
+#### JSON Body
+
+````text
+{
+    "from": 0,
+    "size": 0,
+    "aggregations": {
+        "doi" : {
+            "composite": {
+                "size": 1000,
+                "sources": [
+                    {
+                        "curie": {"terms": {"field": "item.curie.aggregate"}}
+                    }
+                ],
+                "after": {"curie": ""}
+            }
+        }
+    }
+}```
+
+#### Result
+
+```text
+{
+    "took": 31,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 98,
+        "max_score": 0.0,
+        "hits": []
+    },
+    "aggregations": {
+        "doi": {
+            "after_key": {
+                "curie": "doi:10.26275/zxe9-o3ss"
+            },
+            "buckets": [
+                {
+                    "key": {
+                        "curie": "doi:10.26275/0ag5-j3x7"
+                    },
+                    "doc_count": 1
+                }, ...
+````
