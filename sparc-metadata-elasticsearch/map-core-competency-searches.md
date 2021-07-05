@@ -318,7 +318,7 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
 ```
 
 
-## Get list of organs for species
+## Get a list of organs for species
 
 This search looks for a dataset by title.
 
