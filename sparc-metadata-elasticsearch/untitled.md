@@ -8,7 +8,7 @@ The SPARC metadata APIs are provided via an ElasticSearch endpoint.  The metadat
 
 Access to the metadata API is provided via an Elasticsearch pass-through.
 
-{% api-method method="get" host="https://scicrunch.org/api" path="/1/elastic/elastic/SPARC\_PortalDatasets\_pr/\_search" %}
+{% api-method method="get" host="https://scicrunch.org/api" path="/1/elastic/SPARC\_PortalDatasets\_pr/\_search" %}
 {% api-method-summary %}
 General Elasticsearch
 {% endapi-method-summary %}
