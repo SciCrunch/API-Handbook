@@ -14,7 +14,7 @@
 
 ## SPARC Knowledge Graph \(SciGraph\) <a id="sparc-kg-scigraph"></a>
 
-* [Untitled](sparc-kg-scigraph/untitled.md)
+* [Endpoints](sparc-kg-scigraph/endpoints.md)
 
 ## InterLex Terminology
 
