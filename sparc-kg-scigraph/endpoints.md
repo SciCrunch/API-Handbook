@@ -9,7 +9,8 @@ sparc-scigraph endpoint have passed external checks.
 To see the API documentation for this endpoint navigate to  
 [https://scicrunch.org/api/1/sparc-scigraph/docs/](https://scicrunch.org/api/1/sparc-scigraph/docs/)  
 and set the url in the explore box to this url  
-[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)
+[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)  
+if you get a 401 error open [https://scicrunch.org](https://scicrunch.org) in another window and refresh.
 
 ## Staging
 This endpoint is updated as needed without notification is not stable.  
@@ -20,7 +21,8 @@ This endpoint is updated as needed without notification is not stable.
 To see the API documentation for this endpoint navigate to  
 [https://scicrunch.org/api/1/sparc-scigraph/docs/](https://scicrunch.org/api/1/sparc-scigraph/docs/)  
 and set the url in the explore box to this url  
-[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)
+[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)  
+if you get a 401 error open [https://scicrunch.org](https://scicrunch.org) in another window and refresh.
 
 # Additional documentation
 In addition to the swagger docs, the source for the cypher dynamic queries can be found in  
