@@ -23,10 +23,6 @@ The pass-through is accessible at https://scicrunch.org/api/1/elastic.  Similar 
 Documentation on the Elasticsearch Search API is available at https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search.html 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="" type="string" %}
-
-{% endswagger-parameter %}
-
 {% swagger-parameter in="path" name="api_key" type="string" %}
 Your API key to access the services
 {% endswagger-parameter %}
