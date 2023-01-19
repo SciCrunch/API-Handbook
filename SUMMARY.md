@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## SPARC Overview
 
-* [Introduction](sparc-overview/introduction.md)
+* [Introduction](README.md)
 * [Getting Started with SPARC APIs](sparc-overview/getting-started-with-sparc-apis.md)
 
 ## SPARC Metadata (Elasticsearch)
