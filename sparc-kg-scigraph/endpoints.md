@@ -1,4 +1,5 @@
 # Endpoints
+Nearly all users should use the production endpoint.
 ## Production
 This endpoint is only updated when the current contents of the staging
 sparc-scigraph endpoint have passed external checks.  
@@ -7,9 +8,7 @@ sparc-scigraph endpoint have passed external checks.
 
 
 To see the API documentation for this endpoint navigate to  
-[https://scicrunch.org/api/1/sparc-scigraph/docs/](https://scicrunch.org/api/1/sparc-scigraph/docs/)  
-and set the url in the explore box to this url  
-[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)  
+[https://scicrunch.org/api/1/sckan-scigraph/docs/?url=https://scicrunch.org/api/1/sckan-scigraph/swagger.json](https://scicrunch.org/api/1/sckan-scigraph/docs/?url=https://scicrunch.org/api/1/sckan-scigraph/swagger.json)  
 if you get a 401 error open [https://scicrunch.org](https://scicrunch.org) in another window and refresh.
 
 ## Staging
@@ -19,9 +18,7 @@ This endpoint is updated as needed without notification is not stable.
 
 
 To see the API documentation for this endpoint navigate to  
-[https://scicrunch.org/api/1/sparc-scigraph/docs/](https://scicrunch.org/api/1/sparc-scigraph/docs/)  
-and set the url in the explore box to this url  
-[https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/swagger.json)  
+[https://scicrunch.org/api/1/sparc-scigraph/docs/url=https://scicrunch.org/api/1/sparc-scigraph/swagger.json](https://scicrunch.org/api/1/sparc-scigraph/docs/?url=https://scicrunch.org/api/1/sparc-scigraph/swagger.json)  
 if you get a 401 error open [https://scicrunch.org](https://scicrunch.org) in another window and refresh.
 
 # Additional documentation
