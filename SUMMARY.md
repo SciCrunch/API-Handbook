@@ -22,3 +22,8 @@
 
 * [Overview](interlex-terminology/untitled.md)
 * [Basic Interlex Search Example](interlex-terminology/basic-interlex-search-example.md)
+
+## Resources Information Network
+
+* [Overview](resources-information-network/overview.md)
+* [Basic RIN Search Examples](resources-information-network/basic-rin-search-examples.md)
