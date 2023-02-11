@@ -246,7 +246,7 @@ For example, searching Cell Line resources with keyword (CVCL\_0030) and Vendor 
 
 This search looks for a resource that matches the supplied identifier (RRID#).
 
-For example, searching registry resource, SCR\_000415
+For example, searching registry resource, RRID:SCR\_000415
 
 ### JSON Body
 
