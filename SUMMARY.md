@@ -13,6 +13,7 @@
 ## SPARC Knowledge Graph (SciGraph) <a href="#sparc-kg-scigraph" id="sparc-kg-scigraph"></a>
 
 * [Endpoints](sparc-kg-scigraph/endpoints.md)
+* [Accessing SPARC Vocabularies via the SPARC Knowledge Graph](sparc-kg-scigraph/accessing-sparc-vocabularies-via-the-sparc-knowledge-graph.md)
 
 ## SCKAN Overview
 
