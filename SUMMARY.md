@@ -8,6 +8,7 @@
 ## SPARC Metadata (Elasticsearch)
 
 * [Overview](sparc-metadata-elasticsearch/untitled.md)
+* [SPARC Datasets Elasticsearch JSON Data Model](sparc-metadata-elasticsearch/sparc-datasets-elasticsearch-json-data-model.md)
 * [MAP-Core Competency Searches](sparc-metadata-elasticsearch/map-core-competency-searches.md)
 
 ## SPARC Knowledge Graph (SciGraph) <a href="#sparc-kg-scigraph" id="sparc-kg-scigraph"></a>
