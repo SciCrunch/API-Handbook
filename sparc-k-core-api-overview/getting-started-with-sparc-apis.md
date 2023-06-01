@@ -1,10 +1,10 @@
 ---
-description: Instructions for getting started with SPARC APIs
+description: Instructions for getting started with SPARC K-Core APIs
 ---
 
-# Getting Started with SPARC APIs
+# Getting Started with SPARC K-Core APIs
 
-SPARC APIs and associated services provided by the FAIR Data Informatics Laboratory at the University of California, San Diego.  Access to APIs is provided via scicrunch.org. In order to gain access to the APIs please follow the steps below to get your API key.
+The SPARC K-Core APIs and associated services are provided by the FAIR Data Informatics Laboratory at the University of California, San Diego.  Access to APIs is provided via scicrunch.org. In order to gain access to the APIs please follow the steps below to get your API key.
 
 #### Create an account at [scicrunch.org](https://scicrunch.org)
 

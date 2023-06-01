@@ -1,14 +1,14 @@
 # Table of contents
 
-## SPARC Overview
+## SPARC K-Core API Overview
 
 * [Introduction](README.md)
-* [Getting Started with SPARC APIs](sparc-overview/getting-started-with-sparc-apis.md)
+* [Getting Started with SPARC K-Core APIs](sparc-k-core-api-overview/getting-started-with-sparc-apis.md)
 
 ## SPARC Metadata (Elasticsearch)
 
 * [Overview](sparc-metadata-elasticsearch/untitled.md)
-* [SPARC Datasets Elasticsearch JSON Data Model](sparc-metadata-elasticsearch/sparc-datasets-elasticsearch-json-data-model.md)
+* [SPARC Dataset Elasticsearch JSON Data Model](sparc-metadata-elasticsearch/sparc-dataset-elasticsearch-json-data-model.md)
 * [MAP-Core Competency Searches](sparc-metadata-elasticsearch/map-core-competency-searches.md)
 
 ## SPARC Knowledge Graph (SciGraph) <a href="#sparc-kg-scigraph" id="sparc-kg-scigraph"></a>

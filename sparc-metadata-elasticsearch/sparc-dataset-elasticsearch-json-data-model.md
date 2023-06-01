@@ -5,7 +5,7 @@ description: >-
   dataset.
 ---
 
-# SPARC Datasets Elasticsearch JSON Data Model
+# SPARC Dataset Elasticsearch JSON Data Model
 
 Tarotin, I., Mastitskaya, S., Ravagli, E., holder, david, & Aristovich, K. (2022). Temporal dispersion in porcine subdiaphragmatic nerves ex vivo (Version 1) \[Data set]. SPARC Consortium. https://doi.org/10.26275/4MFY-Y7BJ
 
