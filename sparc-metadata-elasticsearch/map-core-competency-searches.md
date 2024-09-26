@@ -317,3 +317,81 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
                         }, ...
 ```
 
+
+## Get a list of organs for species
+
+This search looks for a dataset by title.
+
+### POST
+
+```yaml
+https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=####
+```
+
+### JSON Body Example
+
+```yaml
+{
+    "from": 0,
+    "size": 0,
+    "query": {
+        "query_string": {
+            "fields": [
+                "*species.name"
+            ],
+            "query": "human"
+        }
+    },
+    "aggregations": {
+        "organ": {
+            "composite": {
+                "sources": [
+                    {"id": {"terms": {"field": "anatomy.organ.curie.aggregate"}}},
+                    {"name": {"terms": {"field": "anatomy.organ.name.aggregate"}}} 
+                ],
+                "size": 200
+            }
+        }
+    }
+}
+
+```
+
+### Result
+
+```yaml
+{
+    "took": 13,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 13,
+        "max_score": 0.0,
+        "hits": []
+    },
+    "aggregations": {
+        "organ": {
+            "after_key": {
+                "id": "uberon:0002048",
+                "name": "lung"
+            },
+            "buckets": [
+                {
+                    "key": {
+                        "id": "uberon:0000945",
+                        "name": "stomach"
+                    },
+                    "doc_count": 1
+                },
+                {
+                    "key": {
+                        "id": "uberon:0000948",
+                        "name": "heart"
+                    },
+                    "doc_count": 1
+                }, ...
