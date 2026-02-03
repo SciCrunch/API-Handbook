@@ -12,13 +12,13 @@ This search looks for all datasets that contain an image via the data file mimet
 
 ### POST
 
-```text
-https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
+```
+https://api.scicrunch.io/elastic/v1//SPARC_PortalDatasets_pr/_search?api_key=####
 ```
 
 ### JSON Body
 
-```text
+```
 {
     "size": 10, 
     "from": 0, 
@@ -34,7 +34,7 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
 
 ### Result
 
-```text
+```
 {
     "took": 278,
     "timed_out": false,
@@ -56,12 +56,12 @@ This search finds data given by generating a boolean query across facets. Curren
 
 These queries are generated in sparc-api [here](https://github.com/nih-sparc/sparc-api/blob/eb53aaa7b9904c0fabfe522db7cd8b8c97ff7608/app/process_kb_results.py#L92)
 
-\(In use as of 2021/06/11\)
+(In use as of 2021/06/11)
 
 ### POST
 
-```text
-https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
+```
+https://api.scicrunch.io/elastic/v1/SPARC_PortalDatasets_pr/_search?api_key=####
 ```
 
 ### JSON Body example
@@ -108,12 +108,12 @@ This query requests available facets for a given parameter in the 'hits' object.
 
 Implementation of this can be seen in sparc-api [here](https://github.com/nih-sparc/sparc-api/blob/eb53aaa7b9904c0fabfe522db7cd8b8c97ff7608/app/process_kb_results.py#L59)
 
-\(In use as of 2021/06/11\)
+(In use as of 2021/06/11)
 
 ### POST
 
-```text
-https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_pr/_search?api_key=####
+```
+https://api.scicrunch.io/elastic/v1/SPARC_PortalDatasets_pr/_search?api_key=####
 ```
 
 ### JSON Body example
@@ -177,7 +177,7 @@ This search looks for all DOIs.
 ### POST
 
 ```yaml
-https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=####
+https://api.scicrunch.io/elastic/v1/SPARC_PortalDatasets_dev/_search?api_key=####
 ```
 
 ### JSON Body Example
@@ -239,7 +239,7 @@ This search looks for a dataset by title.
 ### POST
 
 ```yaml
-https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=####
+https://api.scicrunch.io/elastic/v1/SPARC_PortalDatasets_dev/_search?api_key=####
 ```
 
 ### JSON Body Example
@@ -316,4 +316,3 @@ https://scicrunch.org/api/1/elastic/SPARC_PortalDatasets_dev/_search?api_key=###
                             }
                         }, ...
 ```
-

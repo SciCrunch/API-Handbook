@@ -8,26 +8,22 @@ The SPARC metadata APIs are provided via an ElasticSearch endpoint.  The metadat
 
 Access to the metadata API is provided via an Elasticsearch pass-through.
 
-{% swagger baseUrl="https://scicrunch.org/api" path="/1/elastic/SPARC_PortalDatasets_pr/_search" method="get" summary="General Elasticsearch" %}
-{% swagger-description %}
-The pass-through is accessible at https://scicrunch.org/api/1/elastic.  Similar to standard Elasticsearch APIs you must then supply an index and an action.  In this case the SPARC Portal Dataset metadata (SPARC_PortalDatasets_pr) and the search command (_search).
+## General Elasticsearch
 
+<mark style="color:blue;">`GET`</mark> `https://`api.scicrunch.io/elastic/v1/`/SPARC_PortalDatasets_pr/_search`
+
+The pass-through is accessible at https://api.scicrunch.io/elastic/v1/.  Similar to standard Elasticsearch APIs you must then supply an index and an action.  In this case the SPARC Portal Dataset metadata (SPARC\_PortalDatasets\_pr) and the search command (\_search).\
 \
+Documentation on the Elasticsearch Search API is available at https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search.html&#x20;
 
+#### Path Parameters
 
+| Name     | Type   | Description                         |
+| -------- | ------ | ----------------------------------- |
+| api\_key | string | Your API key to access the services |
 
-
-\
-
-
-Documentation on the Elasticsearch Search API is available at https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search.html 
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="api_key" type="string" %}
-Your API key to access the services
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     "took": 35,
@@ -40,8 +36,8 @@ Your API key to access the services
     },
     "hits": {...
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### SPARC metadata indices
 

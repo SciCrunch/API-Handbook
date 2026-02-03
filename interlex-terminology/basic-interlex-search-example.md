@@ -7,7 +7,7 @@ This search looks for a term that matches the supplied identifier
 ### POST
 
 ```
-https://scicrunch.org/api/1/elastic/Interlex_pr/_search?api_key=####
+https://api.scicrunch.io/elastic/v1/Interlex_pr/_search?api_key=####
 ```
 
 ### JSON Body
