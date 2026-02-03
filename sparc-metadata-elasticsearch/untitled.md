@@ -10,7 +10,7 @@ Access to the metadata API is provided via an Elasticsearch pass-through.
 
 ## General Elasticsearch
 
-<mark style="color:blue;">`GET`</mark> `https://`api.scicrunch.io/elastic/v1/`/SPARC_PortalDatasets_pr/_search`
+<mark style="color:blue;">`GET`</mark> https://api.scicrunch.io/elastic/v1//SPARC\_PortalDatasets\_pr/\_search
 
 The pass-through is accessible at https://api.scicrunch.io/elastic/v1/.  Similar to standard Elasticsearch APIs you must then supply an index and an action.  In this case the SPARC Portal Dataset metadata (SPARC\_PortalDatasets\_pr) and the search command (\_search).\
 \
